@@ -31,7 +31,7 @@ func _input(event):
 		DisplayServer.window_set_mode(DisplayServer.WINDOW_MODE_WINDOWED if full_screen else DisplayServer.WINDOW_MODE_FULLSCREEN)
 		
 		full_screen = not full_screen
-	elif Input.is_action_just_pressed("ui_accept"):
+	elif Input.is_action_just_pressed("confirm"):
 		if playing:
 			process_word()
 		else:
